@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Thiago Barlanza - Portfólio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,11 +24,25 @@
         <p>Sou um desenvolvedor de software apaixonado por criar soluções eficientes e inovadoras.</p>
     </section>
 
-    <section id="projetos">
-        <h2>Meus Projetos</h2>
-        <p>Aqui estão alguns dos projetos que desenvolvi:</p>
-        <!-- Adicione links ou descrições dos seus projetos aqui -->
-    </section>
+<section id="projetos">
+    <h2>Meus Projetos</h2>
+    <p>Aqui estão alguns dos projetos que desenvolvi:</p>
+
+    <div class="projeto">
+        <h3>Twin Cats</h3>
+        <p>Um jogo da memória divertido e desafiador onde você ajuda nossos amigos felinos a se reencontrarem com seus irmãos combinando pares de cartas.</p>
+        
+        <a href="https://play.google.com/store/apps/details?id=pt.drunkdroidos.cat_alog" target="_blank">
+            <img src="https://play.google.com/intl/pt-BR/badges/static/images/badges/pt-br_badge_web_generic.png" alt="Disponível no Google Play" style="width: 150px;">
+        </a>
+
+        <!-- Imagens do projeto -->
+        <img src="imagens/Twin_Cats_Tablet_Screenshot_1.png" alt="Captura de tela Twin Cats" style="width: 100%; max-width: 600px; margin-top: 15px; border-radius: 8px;">
+        <img src="imagens/whatsapp_image_2025-02-23_11-10-30_am.jpg" alt="Imagem promocional Twin Cats" style="width: 100%; max-width: 600px; margin-top: 15px; border-radius: 8px;">
+    </div>
+</section>
+
+
 
     <section id="contato">
         <h2>Contato</h2>
