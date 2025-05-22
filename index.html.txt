@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Barlanza - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao meu portfólio!</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou um desenvolvedor de software apaixonado por criar soluções eficientes e inovadoras.</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <p>Aqui estão alguns dos projetos que desenvolvi:</p>
+        <!-- Adicione links ou descrições dos seus projetos aqui -->
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Você pode me encontrar nas redes sociais ou entrar em contato por e-mail.</p>
+        <!-- Adicione suas informações de contato aqui -->
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Thiago Barlanza</p>
+    </footer>
+</body>
+</html>
