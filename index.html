@@ -8,7 +8,180 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
+            background: #1a1a2e;<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Barlanza — Java Backend Engineer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
             background: #1a1a2e;
+            color: #eee;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #e94560;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #aaa;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #e94560;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #e94560;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.3rem;
+        }
+        .skills span {
+            display: inline-block;
+            background: #16213e;
+            color: #fff;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin: 0.2rem;
+            font-size: 0.9rem;
+        }
+        .project {
+            background: #16213e;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 0.5rem 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #e94560;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            color: #666;
+            margin-top: 3rem;
+        }
+        a {
+            color: #e94560;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Caminho da foto de perfil corrigido -->
+            <img src="imagens/profile.jpeg" alt="Thiago Barlanza" class="profile-pic">
+            <h1>Thiago Barlanza</h1>
+            <p>Java Backend Engineer | Spring Boot, Microservices, Docker & CI/CD</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a Java Backend Engineer with 3+ years of experience building and operating production-grade services in distributed, cloud-native environments. I own the full delivery lifecycle — from RESTful APIs and microservices to CI/CD pipelines, containerized deployments, and production observability.</p>
+            <p>My core stack is Java and Spring Boot, with hands-on experience in Docker, Kubernetes, PostgreSQL, and event-driven architectures. I thrive in remote-first teams that value autonomy, clean code, and continuous improvement.</p>
+            <p>I also publish Android games on Google Play in my spare time — because I enjoy building products end-to-end.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>REST APIs</span>
+                <span>Microservices</span>
+                <span>PostgreSQL</span>
+                <span>MySQL</span>
+                <span>MongoDB</span>
+                <span>Elasticsearch</span>
+                <span>Docker</span>
+                <span>Kubernetes</span>
+                <span>Jenkins</span>
+                <span>GitLab CI</span>
+                <span>AWS</span>
+                <span>Linux</span>
+                <span>Prometheus</span>
+                <span>Grafana</span>
+                <span>Git</span>
+                <span>Maven</span>
+                <span>Agile/Scrum</span>
+                <span>JIRA</span>
+                <span>English (Full Professional)</span>
+                <span>Spanish</span>
+                <span>Portuguese</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+
+            <div class="project">
+                <h3>TaskMaster Pro — High-Performance Task Management API</h3>
+                <p>A Spring Boot microservice for processing, sorting, and caching large volumes of tasks. Designed to demonstrate backend engineering best practices: efficient file parsing with Java Streams, custom comparators for sorting, caching layer for performance optimization, and comprehensive unit testing.</p>
+                <p><strong>Java 17 · Spring Boot 3 · Docker · CI/CD · JUnit</strong></p>
+                <a href="https://github.com/ThiagoBarlanza/taskmaster-pro" class="btn">View on GitHub</a>
+            </div>
+
+            <div class="project">
+                <h3>Twin Cats — Memory Puzzle Game</h3>
+                <p>Production Android game published on Google Play with 4.8★ rating. Independently designed, developed, and maintained. End-to-end ownership from architecture to deployment and iteration.</p>
+                <p><strong>Kotlin · Jetpack Compose · Firebase · Google Play Console</strong></p>
+                <!-- Caminho das imagens do Twin Cats corrigido -->
+                <img src="imagens/TwinCats1.jpg" alt="Twin Cats Start Screen">
+                <img src="imagens/TwinCats2.jpg" alt="Twin Cats Story">
+                <img src="imagens/TwinCats6.jpg" alt="Twin Cats Gameplay">
+                <a href="https://play.google.com/store/apps/details?id=pt.drunkdroidos.cat_alog" class="btn">Get it on Google Play</a>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <p><strong>Java Backend Engineer — Baseform</strong> (Aug 2025 – Jan 2026)<br>Designed and maintained core backend services with Java and Spring Boot. Built RESTful APIs and reduced deployment time by ~30% through CI/CD automation and Docker.</p>
+            <p><strong>Software Developer — Critical TechWorks / BMW</strong> (Jan 2024 – Jan 2025)<br>Built backend APIs and integrations for next-gen infotainment platforms. Applied clean-code principles, performance profiling, and testing in safety-critical environments.</p>
+            <p><strong>Software Integration Developer — Nokia</strong> (Oct 2022 – Oct 2023)<br>Automated CI/CD workflows with Jenkins, GitLab, and Docker. Supported 5+ project workflows on Nokia FlowOne.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>📧 <a href="mailto:fusco.thiago@gmail.com">fusco.thiago@gmail.com</a></p>
+            <p>🔗 <a href="https://www.linkedin.com/in/thiagobarlanza/">LinkedIn</a> | <a href="https://github.com/ThiagoBarlanza">GitHub</a></p>
+            <p>📍 Lisbon, Portugal</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Thiago Barlanza</p>
+        </footer>
+    </div>
+</body>
+</html>
             color: #eee;
             line-height: 1.6;
         }
