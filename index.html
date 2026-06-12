@@ -64,7 +64,6 @@
             border-radius: 8px;
             margin-bottom: 1rem;
         }
-        /* Grid para imagens do Twin Cats */
         .project-media-container {
             display: flex;
             gap: 1rem;
@@ -73,7 +72,7 @@
             margin: 1rem 0;
         }
         .project img {
-            max-height: 350px;  /* Imagens compactas */
+            max-height: 350px;
             width: auto;
             border-radius: 8px;
         }
@@ -115,6 +114,13 @@
             color: #ffd700;
             font-weight: bold;
         }
+                .tech-decision {
+            font-size: 0.9rem;
+            background: #0f0f1a;
+            padding: 0.5rem;
+            border-left: 3px solid #e94560;
+            margin-top: 0.5rem;
+        }
     </style>
 </head>
 <body>
@@ -132,25 +138,25 @@
             <p>I also publish Android games on Google Play in my spare time — because I enjoy building products end-to-end.</p>
         </section>
 
-        <!-- EXPERIÊNCIA PROFISSIONAL LOGO APÓS O ABOUT (mudança de layout) -->
-        <section id="experience">
+                <section id="experience">
             <h2>Professional Experience</h2>
             <p>
                 <strong>Java Backend Engineer — <a href="https://baseform.com" target="_blank">Baseform</a></strong> (Aug 2025 – Jan 2026)<br>
-                • Designed and maintained core backend services with Java and Spring Boot.<br>
-                • Built RESTful APIs integrated with external client systems.<br>
-                • Resolved <strong>10+</strong> critical production incidents via observability and debugging.
+                • Owned Spring Boot backend services supporting client-facing operations.<br>
+                • Built REST APIs integrated with external client systems, <span class="highlight">reducing manual operational effort</span>.<br>
+                • Resolved <strong>10+ critical production incidents</strong> through monitoring, debugging and root-cause analysis, helping stabilize delivery.
             </p>
             <p>
                 <strong>Software Developer — <a href="https://www.criticaltechworks.com" target="_blank">Critical TechWorks / BMW</a></strong> (Jan 2024 – Jan 2025)<br>
-                • Built backend APIs and integrations for BMW’s next-gen infotainment platform.<br>
-                • Applied clean-code principles, performance profiling, and comprehensive testing in safety-critical environments.
+                • Delivered backend APIs and integrations for BMW’s next-gen infotainment platform.<br>
+                • Improved maintainability and reliability through <span class="highlight">clean code, performance profiling, and automated testing</span>.<br>
+                • Collaborated with product and platform engineers to ship incremental features in a safety-critical environment.
             </p>
             <p>
                 <strong>Software Integration Developer — <a href="https://www.nokia.com" target="_blank">Nokia</a></strong> (Oct 2022 – Oct 2023)<br>
                 • <span class="highlight">Reduced deployment time by ~30%</span> through CI/CD automation and Docker.<br>
                 • Automated CI/CD workflows with Jenkins, GitLab, Docker, and Shell scripting.<br>
-                • Supported <strong>5+</strong> project workflows on Nokia FlowOne.
+                • Supported <strong>5+ project workflows</strong> on Nokia FlowOne, improving delivery consistency.
             </p>
         </section>
 
@@ -186,11 +192,16 @@
         <section id="projects">
             <h2>Featured Projects</h2>
 
-            <div class="project">
+                        <div class="project">
                 <h3>TaskMaster Pro — High-Performance Task Management API</h3>
-                <p>Microservice focused on asynchronous processing. Features a caching layer that reduces read response times, efficient large-file parsing with Java Streams, and a custom sorting engine. Built to demonstrate production-ready backend architecture.</p>
-                <p><strong>Java 17 · Spring Boot 3 · Docker · CI/CD · JUnit</strong></p>
-                <a href="https://github.com/ThiagoBarlanza/taskmaster-pro" class="btn">View on GitHub</a>
+                <p>Production-ready REST API built with Java 21 and Spring Boot 3. Demonstrates solid engineering practices: <strong>manual caching (ConcurrentHashMap)</strong>, <strong>streaming CSV/JSON processing</strong> (memory-efficient for large files), custom sorting, SQL JOIN demos, and 80%+ test coverage with JaCoCo.</p>
+                
+                <div class="tech-decision">
+                    💡 <strong>Key technical decisions:</strong> Manual cache over @Cacheable to show internal understanding · Composition over inheritance for testability · Streaming API avoids OutOfMemoryError · H2 for quick demos, but ready to switch to PostgreSQL.
+                </div>
+
+                <p><strong>Java 21 · Spring Boot 3 · Maven · JUnit 5 · JaCoCo · H2</strong></p>
+                <a href="https://github.com/ThiagoBarlanza/taskmaster-pro" class="btn" target="_blank">View on GitHub → Full README with architecture</a>
             </div>
 
             <div class="project">
@@ -198,7 +209,6 @@
                 <p>Production Android game (4.8★) published on Google Play. End-to-end ownership: design, development, Firebase integration, AdMob, and CI/CD pipeline for automated deployment. Demonstrates full product lifecycle management.</p>
                 <p><strong>Kotlin · Jetpack Compose · Firebase · Google Play Console</strong></p>
 
-                <!-- Imagens compactadas num grid horizontal -->
                 <div class="project-media-container">
                     <img src="imagens/TwinCats1.jpg" alt="Twin Cats Start Screen">
                     <img src="imagens/TwinCats2.jpg" alt="Twin Cats Story">
